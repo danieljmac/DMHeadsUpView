@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter Demo Text:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hql-5P-BVJ">
+                                <rect key="frame" x="30" y="11" width="261" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="W8L-11-5r0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNextCondensed-Medium" family="Avenir Next Condensed" pointSize="18"/>
+                                <color key="textColor" red="0.34774257596685088" green="0.34774257596685088" blue="0.34774257596685088" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="stx-uX-d8r">
+                                <rect key="frame" x="10" y="40" width="300" height="147"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Some quick heads up message that the user should see." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="nfv-pq-b28">
+                                        <rect key="frame" x="4" y="5" width="292" height="137"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" name="AvenirNextCondensed-Regular" family="Avenir Next Condensed" pointSize="25"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences" returnKeyType="done"/>
+                                    </textView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.85233191289999999" blue="0.72289197220000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="nfv-pq-b28" secondAttribute="bottom" constant="5" id="17K-M2-Jfc"/>
+                                    <constraint firstAttribute="height" constant="147" id="EGP-mz-0Wg"/>
+                                    <constraint firstItem="nfv-pq-b28" firstAttribute="top" secondItem="stx-uX-d8r" secondAttribute="top" constant="5" id="MDx-mW-dSm"/>
+                                    <constraint firstItem="nfv-pq-b28" firstAttribute="leading" secondItem="stx-uX-d8r" secondAttribute="leading" constant="4" id="hMA-N2-Yaw"/>
+                                    <constraint firstAttribute="trailing" secondItem="nfv-pq-b28" secondAttribute="trailing" constant="4" id="rht-9l-yEA"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U56-NT-YbD">
+                                <rect key="frame" x="53" y="261" width="215" height="43"/>
+                                <color key="backgroundColor" red="0.0" green="0.85233191289999999" blue="0.72289197220000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="43" id="eaJ-DZ-cb3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNextCondensed-Medium" family="Avenir Next Condensed" pointSize="19"/>
+                                <state key="normal" title="Show Success">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="successButtonAction:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="5sv-2g-kDD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iAi-m0-gyo">
+                                <rect key="frame" x="53" y="314" width="215" height="43"/>
+                                <color key="backgroundColor" red="1" green="0.89168699740000001" blue="0.46862414400000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="43" id="FAR-W7-Se8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNextCondensed-Medium" family="Avenir Next Condensed" pointSize="19"/>
+                                <state key="normal" title="Show Alert">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="alertButtonAction:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="xVa-oL-Aa0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K9i-jU-3ml">
+                                <rect key="frame" x="53" y="367" width="215" height="43"/>
+                                <color key="backgroundColor" red="0.85233191289999999" green="0.46282909840000003" blue="0.43632639429999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="43" id="Ks9-EF-xGu"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNextCondensed-Medium" family="Avenir Next Condensed" pointSize="19"/>
+                                <state key="normal" title="Show Error">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="errorButtonAction:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Z90-KH-yI0"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="iAi-m0-gyo" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="53" id="1j1-WR-cGw"/>
+                            <constraint firstItem="U56-NT-YbD" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="53" id="3kE-T8-rQv"/>
+                            <constraint firstAttribute="trailing" secondItem="hql-5P-BVJ" secondAttribute="trailing" constant="29" id="4T4-zu-rGl"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="iAi-m0-gyo" secondAttribute="bottom" constant="123" id="8Oq-L0-lsK"/>
+                            <constraint firstItem="stx-uX-d8r" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="40" id="9Mc-Ye-tzx"/>
+                            <constraint firstItem="stx-uX-d8r" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="10" id="Jc7-LV-Ugh"/>
+                            <constraint firstItem="K9i-jU-3ml" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="53" id="NA0-rU-QHC"/>
+                            <constraint firstAttribute="trailing" secondItem="iAi-m0-gyo" secondAttribute="trailing" constant="52" id="NNU-Tc-dig"/>
+                            <constraint firstAttribute="trailing" secondItem="stx-uX-d8r" secondAttribute="trailing" constant="10" id="RKn-X2-GGN"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="K9i-jU-3ml" secondAttribute="bottom" constant="70" id="WpL-n1-V7Q"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="U56-NT-YbD" secondAttribute="bottom" constant="176" id="Xr3-Si-aos"/>
+                            <constraint firstAttribute="trailing" secondItem="U56-NT-YbD" secondAttribute="trailing" constant="52" id="iw1-2w-nrR"/>
+                            <constraint firstItem="hql-5P-BVJ" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="30" id="ogt-0s-jHb"/>
+                            <constraint firstItem="hql-5P-BVJ" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="11" id="sBo-Vv-auo"/>
+                            <constraint firstAttribute="trailing" secondItem="K9i-jU-3ml" secondAttribute="trailing" constant="52" id="xVs-zh-1iI"/>
+                        </constraints>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="alertButton" destination="iAi-m0-gyo" id="jd6-TD-O8N"/>
+                        <outlet property="demoTextContainer" destination="stx-uX-d8r" id="yeo-iK-W8x"/>
+                        <outlet property="demoTextView" destination="nfv-pq-b28" id="Sjl-hF-f1g"/>
+                        <outlet property="errorButton" destination="K9i-jU-3ml" id="c3z-4e-whK"/>
+                        <outlet property="successButton" destination="U56-NT-YbD" id="GWB-ew-JzN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="531" y="240"/>
+        </scene>
+    </scenes>
+</document>
